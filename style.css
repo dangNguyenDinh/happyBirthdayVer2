@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    cursor: url('./assetForHappybirthday2/cursor.png'), auto;
+}
+
+
+#wrapper{
+    background-color: #0b120d;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.randomNumber{
+    color: #00ff49;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 6vh;
+    display: inline-block;
+}
+#start{
+    position: absolute;
+    background-color: black;
+    text-align: center;
+    line-height: 10vh;
+    color: #00ff49;
+    height: 10vh;
+    width: 30vw;
+    top: 45vh;
+    left: 35vw;
+    z-index: 1;
+    border-color: grey;
+    border-style: solid;
+}
+
+#password{
+    position: absolute;
+    background-color: black;
+    text-align: center;
+    line-height: 10vh;
+    color: #00ff49;
+    height: 40vh;
+    width: 50vw;
+    top: 35vh;
+    left: 25vw;
+    z-index: 1;
+    border-color: grey;
+    border-style: solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vh;
+    display: none;
+}
+
+.password{
+    position: relative;
+    height: 5vh;
+    left: 0vw;
+    width: 23vw;
+    font-size: 4vh;
+    background-color: #101d13;
+    color: #00ff49;
+}
+.submit{
+    width: 5vw;
+}
+.wrongPassword{
+    position: absolute;
+    background-color: black;
+    text-align: center;
+    line-height: 10vh;
+    height: 10vh;
+    width: 50vw;
+    top: 45vh;
+    left: 25vw;
+    z-index: 1;
+    border-color: grey;
+    border-style: solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vh;
+    display: none;
+}
+
+#wrongPassword1{
+    color: #00ff49;
+}
+#wrongPassword2{
+    color: red;
+}
+#decoding{
+    position: absolute;
+    background-color: black;
+    text-align: center;
+    line-height: 10vh;
+    height: 20vh;
+    width: 50vw;
+    top: 45vh;
+    left: 25vw;
+    z-index: 1;
+    border-color: grey;
+    border-style: solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vh;
+    display: none;
+}
+#decoding .wrap{
+    background-color: gray;
+    color: gray;
+    position: absolute;
+    width: 40vw;
+    top: 10vh;
+    left: 5vw;
+    height: 8vh; 
+}
+#decoding .process{
+    background-color: #00ff49;
+    color: #00ff49;
+    position: absolute;
+    width: 38vw;
+    top: 11vh;
+    left: 6vw;
+    height: 6vh; 
+    animation: processing 5s linear;
+}
+#decoding .decodingTitle{
+    color: red;
+    font-size: 5vh;
+}
+@keyframes processing {
+    0%{
+        width: 8vw;
+    }
+    100%{
+        width: 38vw;
+    }
+}
+
+#loading{
+    position: absolute;
+    background-color: black;
+    text-align: center;
+    line-height: 10vh;
+    height: 30vh;
+    width: 40vw;
+    top: 30vh;
+    left: 30vw;
+    z-index: 1;
+    border-color: grey;
+    border-style: solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vh;
+    color: red;
+    display: none;
+
+}
+
+#loading .num{
+    background-color: grey;
+    display: inline-block;
+    position: absolute;
+    width: 3vw;
+    color: #00ff49;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vw;
+    top: 13vh;
+}
+#loading .num1{
+    left: 6vw;
+}
+#loading .num2{
+    left: 10vw;
+}
+#loading .num3{
+    left: 16vw;
+}
+#loading .num4{
+    left: 20vw;
+}
+#loading .num5{
+    right: 10vw;
+}
+#loading .num6{
+    right: 6vw;
+}
+
+#happy{
+    position: absolute;
+    left: 50vw;
+    transform: translateX(-50%);
+    display: block;
+}
+#canvas{
+    display: none;
+    position: absolute;
+}
+
+@media (max-width: 700px) {
+    #wrapper{
+        background-color: #0b120d;
+        height: 100vh;
+        width: 100vw;
+    
+    }
+    
+    .randomNumber{
+        color: #00ff49;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 6vh;
+        display: inline-block;
+    }
+    #start{
+        position: absolute;
+        background-color: black;
+        text-align: center;
+        line-height: 10vh;
+        color: #00ff49;
+        height: 10vh;
+        width: 50vw;
+        top: 45vh;
+        left: 25vw;
+        z-index: 1;
+        border-color: grey;
+        border-style: solid;
+    }
+    
+    #password{
+        position: absolute;
+        background-color: black;
+        text-align: center;
+        line-height: 10vh;
+        color: #00ff49;
+        height: 40vh;
+        width: 70vw;
+        top: 35vh;
+        left: 15vw;
+        z-index: 1;
+        border-color: grey;
+        border-style: solid;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2vh;
+        display: none;
+    }
+    #password .subtitle{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #password .password{
+        position: relative;
+        height: 5vh;
+        left: 0vw;
+        width: 40vw;
+        font-size: 4vh;
+        background-color: #101d13;
+        color: #00ff49;
+    }
+    .submit{
+        width: 10vw;
+    }
+    .wrongPassword{
+        position: absolute;
+        background-color: black;
+        text-align: center;
+        line-height: 10vh;
+        height: 10vh;
+        width: 70vw;
+        top: 45vh;
+        left: 15vw;
+        z-index: 1;
+        border-color: grey;
+        border-style: solid;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2vh;
+        display: none;
+    }
+    
+    #wrongPassword1{
+        color: #00ff49;
+    }
+    #wrongPassword2{
+        color: red;
+        font-size: 1.5vh;
+    }
+    #decoding{
+        position: absolute;
+        background-color: black;
+        text-align: center;
+        line-height: 10vh;
+        height: 20vh;
+        width: 70vw;
+        top: 45vh;
+        left: 15vw;
+        z-index: 1;
+        border-color: grey;
+        border-style: solid;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1vh;
+        display: none;
+    }
+    
+    #decoding .wrap{
+        background-color: gray;
+        color: gray;
+        position: absolute;
+        width: 60vw;
+        top: 10vh;
+        left: 5vw;
+        height: 8vh; 
+    }
+    #decoding .process{
+        background-color: #00ff49;
+        color: #00ff49;
+        position: absolute;
+        width: 58vw;
+        top: 11vh;
+        left: 6vw;
+        height: 6vh; 
+        animation: processing 5s linear;
+    }
+    #decoding .decodingTitle{
+        color: red;
+        font-size: 3vh;
+    }
+    @keyframes processing {
+        0%{
+            width: 8vw;
+        }
+        100%{
+            width: 58vw;
+        }
+    }
+    
+    #loading{
+        position: absolute;
+        background-color: black;
+        text-align: center;
+        line-height: 10vh;
+        height: 25vh;
+        width: 80vw;
+        top: 30vh;
+        left: 10vw;
+        z-index: 1;
+        border-color: grey;
+        border-style: solid;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2vh;
+        color: red;
+        display: none;
+    
+    }
+    
+    #loading .num{
+        background-color: grey;
+        display: inline-block;
+        position: absolute;
+        width: 8vw;
+        height: 8vh;
+        line-height: 8vh;
+        color: #00ff49;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 8vw;
+        top: 11vh;
+    }
+    #loading .num1{
+        left: 8vw;
+    }
+    #loading .num2{
+        left: 18vw;
+    }
+    #loading .num3{
+        left: 30vw;
+    }
+    #loading .num4{
+        left: 40vw;
+    }
+    #loading .num5{
+        right: 20vw;
+    }
+    #loading .num6{
+        right: 10vw;
+    }
+    
+    #happy{
+        position: absolute;
+        left: 50vw;
+        transform: translateX(-50%);
+        display: none;
+        top: 30vh;
+        width: 80vw;
+    }
+    #canvas{
+        display: none;
+        position: absolute;
+    }
+}
+
+
